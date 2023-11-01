@@ -2,7 +2,7 @@ def ordenarNumeros(numeros:list)->list:
     numeros.sort()
     return numeros
 
-# todo: intentar implementar esto
+# TODO: intentar implementar esto
 # def comprobarLista(numeros:list, numero:int):
 #     if numero not in numeros:
 #         return True
