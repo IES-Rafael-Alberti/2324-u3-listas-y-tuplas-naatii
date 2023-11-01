@@ -8,5 +8,7 @@ def asignaturas()->list:
     
     # * En el ejercicio indica que debe ser una lista pero al ser valores que no van a ser modificados he decidido usar una tupla para este cometido
 
+# ? Esto necesita test?
+
 if __name__=="__main__":
     print(asignaturas())
