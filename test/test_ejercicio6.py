@@ -1,6 +1,5 @@
 from src.ejercicio6 import *
 import pytest
-    # The function receives a tuple with the names of the subjects and a list with the grades of each subject, and returns a string with the name of the subjects that the student failed and their respective grades.
 @pytest.mark.parametrize(
     "asignaturas, notas, expected_output", 
     [
@@ -10,9 +9,6 @@ import pytest
         (("Matemáticas", "Física", "Química", "Historia", "Lengua"), ["5", "5", "5", "5", "5"], ""),
         (("Matemáticas", "Física", "Química", "Historia", "Lengua"), ["6", "4", "7", "-3", "5"], "En Física has sacado 4\nEn Historia has sacado 0\n"),
     ])
-def test_failed_subjects_and_grades(asignaturas, notas, expected_output):
-        # Act
-        result = mensajeNotasAsignaturas(asignaturas, notas)
-
-        # Assert
-        assert result == expected_output
+def test_mensajeNotasAsignaturas(asignaturas, notas, expected_output):
+        assert mensajeNotasAsignaturas(asignaturas, notas) == expected_output
+       
