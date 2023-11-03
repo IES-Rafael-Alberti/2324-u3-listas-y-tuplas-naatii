@@ -6,7 +6,7 @@ def eliminarletras(abecedario:list)->list:
     Returns:
         list: Lista con los caracteres de un abecedario.
     """
-    abecedario[::3] 
+    del abecedario[::3] 
     return abecedario
     
 
