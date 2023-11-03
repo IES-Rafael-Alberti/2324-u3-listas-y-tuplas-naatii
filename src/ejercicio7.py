@@ -6,12 +6,9 @@ def eliminarletras(abecedario:list)->list:
     Returns:
         list: Lista con los caracteres de un abecedario.
     """
-    abecedarioDeMultiplosDeTres = [] 
-
-    for i in range(0, len(abecedario)-1):
-        if i % 3 != 0:
-            abecedarioDeMultiplosDeTres.append(abecedario[i])
-    return abecedarioDeMultiplosDeTres
+    abecedario[::3] 
+    return abecedario
+    
 
 if __name__ == "__main__":
     abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
